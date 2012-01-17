@@ -18,7 +18,8 @@ public class Hole2Before {
         int amount = Integer.parseInt(parts[1]);
 
         if (direction.equals("foward")) {
-            instructions.add(new MoveInstruction(amount));
+            Instruction instruction = new MoveInstruction(amount);
+            instructions.add(instruction);
         }
         if (direction.equals("left")) {
             instructions.add(new TurnInstruction(amount));
